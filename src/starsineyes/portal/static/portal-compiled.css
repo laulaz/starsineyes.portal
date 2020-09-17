@@ -1,0 +1,89 @@
+.searchSection {
+    display: none !important;
+}
+
+#portal-banner {
+    padding: 0px;
+    margin-top: 0px;
+    background: transparent;
+}
+
+#portal-banner .container {
+    width: 100%;
+}
+
+#portal-logo img {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.portal-banner .bannerImage img {
+    margin: auto;
+}
+
+.plone-nav > li > a:hover,
+.plone-nav > li > a:focus,
+.plone-navbar-nav > .selected > a,
+.plone-navbar-nav > .selected > a:hover,
+.plone-navbar-nav > .selected > a:focus {
+    background-color: #cc97e5;
+}
+
+.plone-breadcrumb ol a {
+    color: #ff8c41;
+}
+
+.textual-testimony {
+    padding: 2rem 5rem;
+    background-color: rgb(0, 124, 184, 0.1);
+    margin: 0 0 3rem 0;
+}
+
+.textual-testimony-text {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.textual-testimony-text > :first-child::before {
+    content: "“";
+    font-family: 'Arial';
+    font-size: 300%;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(-150%, -20%);
+    color: #007CB8;
+}
+
+.textual-testimony-text > :last-child::after {
+    content: "”";
+    font-family: 'Helvetica';
+    font-size: 300%;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(50%, 20%);
+    color: #007CB8;
+}
+
+.textual-testimony-infos {
+    text-align: right;
+    margin-top: 2rem;
+    color: #007CB8;
+    font-weight: bold;
+}
+
+#portal-footer .row + .site-actions {
+    border-top: none !important;
+}
+
+#portal-footer-wrapper {
+    padding: 0px !important;
+}
+
+#portal-footer > .row {
+    margin-top: 0px !important;
+}
+
+#portal-footer {
+    text-align: center;
+    padding-top: 1em;
+}

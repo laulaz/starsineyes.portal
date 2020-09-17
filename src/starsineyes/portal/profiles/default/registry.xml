@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <record name="plone.allowed_sizes"
+          interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema" field="allowed_sizes">
+    <value purge="true">
+      <element>large 768:768</element>
+      <element>preview 400:400</element>
+      <element>mini 200:200</element>
+      <element>thumb 128:128</element>
+      <element>tile 64:64</element>
+      <element>icon 32:32</element>
+      <element>listing 16:16</element>
+      <element>banner 1500:450</element>
+    </value>
+  </record>
+
+  <record name="plone.mark_special_links" interface="Products.CMFPlone.interfaces.controlpanel.ILinkSchema" field="mark_special_links">
+    <value>False</value>
+  </record>
+
+  <records prefix="plone.resources/starsineyes.portal"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">++plone++starsineyes.portal/portal.css</value>
+  </records>
+
+  <records prefix="plone.bundles/starsineyes.portal"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>starsineyes.portal</element>
+    </value>
+    <value key="depends">plone</value>
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="csscompilation">++plone++starsineyes.portal/portal-compiled.css</value>
+    <value key="last_compilation">2020-02-12 16:30:00</value>
+  </records>
+
+</registry>

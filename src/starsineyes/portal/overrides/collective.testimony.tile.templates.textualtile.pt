@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      i18n:domain="plone">
+  <body>
+   <tal:block condition="view/available">
+      <div tal:define="data view/get_value;"
+           class="textual-testimony"
+           condition="data">
+          <tal:def tal:define="url data/url;
+                               text data/text;
+                               name data/name;
+                               age data/age;">
+            <div class="textual-testimony-text">
+                <p tal:replace="structure text"></p>
+            </div>
+            <div class="textual-testimony-infos">
+                <span tal:content="name"></span><span tal:condition="age">, <span tal:content="age"></span> ans</span>
+            </div>
+          </tal:def>
+      </div>
+   </tal:block>
+  </body>
+</html>

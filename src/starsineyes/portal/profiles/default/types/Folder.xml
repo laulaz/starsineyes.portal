@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<object
+    i18n:domain="plone"
+    meta_type="Dexterity FTI"
+    name="Folder"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors" purge="true">
+    <element value="plone.dublincore" />
+    <element value="plone.namefromtitle" />
+    <element value="plone.excludefromnavigation" />
+    <element value="plone.shortname" />
+    <element value="plone.constraintypes" />
+    <element value="plone.relateditems" />
+    <element value="collective.behavior.banner.banner.IBanner" />
+    <element value="plone.imagecropping" />
+    <element value="plone.layoutaware" />
+  </property>
+
+</object>
