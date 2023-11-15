@@ -51,6 +51,7 @@ setup(
         "collective.behavior.banner",
         "collective.cookiecuttr",
         "collective.easyform",
+        "collective.honeypot",
         "collective.testimony",
     ],
     entry_points="""
